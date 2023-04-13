@@ -1,0 +1,524 @@
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cabin', serif;
+  color: white;
+  background-color: #1D1D1D;
+  height:100vh;
+  margin-top:40px;
+  width:100%;
+}
+
+h6{
+  font-family: 'Playfair Display', sans-serif;
+  font-size:2rem;
+  color:white;
+  background-color:black;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+#header{
+  width:100%;
+  height:40px;
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#3F3E3E;
+  z-index:2;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  padding:5px 25px;
+  font-size:1.5rem;
+  font-weight:bold;
+  transition-duration:0.4s;
+}
+
+#navbar a:hover{
+  background: #F9F1FA ;
+  color: #24552A;
+  transition-duration: 0.4s;
+  font-size:1.6rem;
+  padding:12px 26px;
+}
+
+#welcome-section, #projects, #education, #skillset, #contact{
+  height:calc(100vh + 40px);
+  padding-top:45px;
+}
+
+#welcome-section{
+  display:flex;
+  padding-top:0px;
+}
+
+#welcome-img{
+  height:90%;
+  width:auto;
+  margin-left:-90px;
+  z-index:-1;
+  border-radius:0.5%;
+}
+
+.desc{
+  z-index:1;
+  position:absolute;
+  margin-left:600px;
+  margin-top:12%;
+}
+
+.desc h1{
+  font-size:5rem;
+  padding:10px 0;
+}
+
+#based{
+  background-image: linear-gradient(45deg,#72C280,#C22525);
+  background-size:100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  animation: simple-animation-rev 0.5s ease forwards;
+}
+
+.sub{
+  font-weight:bold;
+  color:#939393;
+  margin-left:2%;
+  margin-top: 1%;
+  font-size:1.5rem;
+}
+
+#projects h2{
+  text-align:center;
+  font-size:4rem;
+  padding-top:3%;
+}
+
+#projects h3{
+  text-align:center;
+  font-size:1.5rem;
+  color:#525252;
+}
+
+
+#projects #date{
+  font-size:2rem;
+  background-image: linear-gradient(45deg,#CB4297,#72C280);
+  background-size:100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.project-img{
+height:230px;
+width:230px;
+margin-top:25%;
+object-fit:cover;
+object-position:5% 0;
+border-radius:5%;
+}
+
+.project-title{
+text-align:center;
+}
+
+.projects-grid .project-title{
+  font-size:1.4rem;
+  padding-top:5%;
+  transition-duration:0.4s;
+  font-weight:bold;
+}
+
+.note{
+  color:#525252;
+  text-align:center;
+  font-size:1rem;
+}
+
+.project-title .code{
+  display:none;
+  transition-duration:0.4s;
+}
+
+.project-link:hover .code { 
+  color: #F3884B; 
+  display:inline;
+  font-size:1.6rem;
+  font-weight:bold;
+  transition-duration: 0.6s;
+  }
+
+.project-link:hover { 
+  font-size:1.5rem;
+  transition-duration:0.6s;
+  }
+
+.projects-grid{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:15px;
+}
+
+.education{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:15px;
+}
+
+.img-container{
+  border-radius:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: linear-gradient(45deg,#CB4297,#72C280);
+}
+
+.school-img{
+  background-color:white;
+  border-radius:50%;
+  display: block;
+  margin:auto;
+  position:absolute;
+}
+
+.img-container.left{
+  width:200px;
+  height:200px;
+  margin-top:45%;
+}
+
+.img-container.left .school-img{
+  height:190px;
+  width:190px;
+  top:5px;
+  left:5px;
+}
+
+.img-container.right{
+  width:350px;
+  height:350px;
+  margin-top:0%;
+}
+
+.img-container.right .school-img{
+  height:340px;
+  width:340px;
+  top:5px;
+  left:5px;
+}
+
+.school-name{
+  margin-top:10%;
+  text-align:center;
+  font-size:3rem;
+  font-weight:bold;
+}
+
+.school-note{
+  margin-top:1%;
+  text-align:center;
+  font-size:1.7rem;
+  font-weight:normal;
+}
+
+.ed-link{
+  color:#DFCFDF ;
+  transition-duration:0.4s;
+}
+
+.ed-link:hover{
+  font-size:2rem;
+  background-image: linear-gradient(45deg,#CB4297,#72C280);
+  background-size:100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  transition-duration:0.6s;
+}
+
+#skillset{
+  display:flex;
+  justify-content: space-around;
+  padding:0 0;
+  margin-bottom:12%;
+  align-items:center;
+}
+
+.skillset-desc{
+  padding:3% 5%;
+  width:300px;
+  text-align:center;
+}
+
+.skillset-desc h2{
+  font-size:8rem;
+  padding-top:25%;
+  background-image: linear-gradient(45deg,#72C280,#CB4297);
+  background-size:100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  animation: simple-animation-rev 0.5s ease forwards;
+}
+
+.skillset-desc h2:hover{
+    animation: simple-animation 0.5s ease-in forwards;
+}
+
+.skillset-desc p{
+  font-size:1.7rem;
+  text-align:center;
+  margin-top:10px;
+  font-weight:bold;
+  line-height: 170%;
+}
+
+.skills{
+  display:grid;
+  width:50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: repeat(2, 1fr);
+}
+
+i{
+  color: #DA92BF ;
+}
+
+.skills h3{
+  padding-top:10%;
+  font-size:2rem;
+}
+
+.skills p{
+  line-height: 160%;
+  padding-top:5%;
+  font-size:1.5rem;
+}
+
+#contact{
+  display:flex;
+  justify-content: space-around;
+  padding:1% 0;
+  margin-bottom:12%;
+  align-items:center;
+  height:50%;
+}
+.contact-header h2{
+  font-size:6rem;
+}
+
+.contact-header p{
+  font-size:1.4rem;
+}
+
+#contact i{
+background-image: linear-gradient(45deg,#72C280,#CB4297);
+  background-size:100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  text-shadow: 0 10 100px #fff;
+}
+
+.contact-links{
+  width:20%;
+  height:30%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.contact-links a{
+  font-size:2.3rem;
+  padding:5% 0;
+  transition-duration:0.4s;
+}
+
+.contact-links a:hover{
+  font-size:2.8rem;
+  transition-duration:0.4s;
+}
+
+/*ANIMATIONS*/
+@keyframes simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+@keyframes simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/*MEDIUM*/
+@media (min-width: 830px) and (max-width: 1050px) {
+  .skillset-desc p{
+  font-size:1.6rem;
+  }
+
+  .skills h3{
+  padding-top:10%;
+  font-size:1.8rem;
+}
+
+.skills p{
+  line-height: 160%;
+  padding-top:5%;
+  font-size:1.3rem;
+}
+}
+
+/*SMALL*/
+@media (max-width: 830px) {
+  #navbar a{
+  font-size:1.1rem;
+}
+
+#welcome-img{
+  height:50%;
+  width:auto;
+  margin-top:100px;
+}
+
+.desc{
+  margin-left:300px;
+  margin-top:30%;
+}
+
+.desc h1{
+  font-size:3rem;
+}
+
+.sub{
+  margin-left:2%;
+  margin-top: 1%;
+  font-size:1.5rem;
+}
+
+.project-img{
+height:170px;
+width:170px;
+margin-top:35%;
+}
+
+.projects-grid .project-title{
+  font-size:1rem;
+}
+
+.note{
+  font-size:0.8rem;
+}
+
+.project-link:hover .code { 
+  font-size:1.2rem;
+  }
+
+.project-link:hover { 
+  font-size:1.5rem;
+  }
+
+#projects h2{
+  padding-top:10%;
+}
+
+.img-container.right{
+  width:320px;
+  height:320px;
+  margin-top:5%;
+}
+
+.img-container.right .school-img{
+  height:310px;
+  width:310px;
+}
+
+.skillset-desc h2{
+  font-size:6rem;
+}
+
+.skillset-desc p{
+  font-size:1.1rem;
+  padding:0 10%;
+  }
+
+.skills h3{
+  padding-top:10%;
+  font-size:1.5rem;
+}
+
+.skills p{
+  line-height: 160%;
+  padding-top:5%;
+  font-size:1rem;
+}
+
+
+.contact-header h2{
+  font-size:4rem;
+}
+
+.contact-header p{
+  font-size:0.95rem;
+}
+
+.contact-links a{
+  font-size:1.8rem;
+  margin-left:-50px;
+}
+
+.contact-links a:hover{
+  font-size:2rem;
+}
+}
